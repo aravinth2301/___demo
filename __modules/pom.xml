@@ -2,17 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>___demo</artifactId>
+        <groupId>au.company.demo</groupId>
+        <version>v1</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>au.company.demo</groupId>
-    <artifactId>___demo</artifactId>
     <packaging>pom</packaging>
-    <version>v1</version>
     <modules>
-        <module>__modules</module>
-        <module>_lib-common</module>
-        <module>_lib-dao</module>
+        <module>sample</module>
     </modules>
+    <artifactId>__modules</artifactId>
 
 
 </project>

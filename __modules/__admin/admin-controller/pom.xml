@@ -7,4 +7,11 @@
     </parent>
   <artifactId>admin-controller</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>au.company.demo</groupId>
+            <artifactId>admin-service</artifactId>
+            <version>v1</version>
+        </dependency>
+    </dependencies>
 </project>

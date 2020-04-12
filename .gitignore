@@ -1,3 +1,5 @@
-/___demo.iml
+**/**.iml
 .idea
 **/target
+**/.classpath
+**/.project

@@ -12,6 +12,7 @@
         <module>__modules</module>
         <module>_lib-common</module>
         <module>_lib-dao</module>
+        <module>_lib-service</module>
     </modules>
 
     <parent>

@@ -14,6 +14,7 @@
     <dependency>
         <groupId>au.company.demo</groupId>
         <artifactId>_lib-common</artifactId>
+        <version>v1</version>
     </dependency>
 </dependencies>
 </project>

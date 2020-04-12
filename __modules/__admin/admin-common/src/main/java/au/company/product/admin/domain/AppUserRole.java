@@ -8,6 +8,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
+import javax.persistence.*;
+
 @Entity
 @Table(name = "admin_app_user_role")
 @JsonIgnoreProperties(ignoreUnknown = true)

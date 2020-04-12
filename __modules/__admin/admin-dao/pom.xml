@@ -7,4 +7,17 @@
 	</parent>
   <artifactId>admin-dao</artifactId>
 
+	<dependencies>
+		<dependency>
+			<groupId>au.company.demo</groupId>
+			<artifactId>admin-common</artifactId>
+			<version>v1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>au.company.demo</groupId>
+			<artifactId>_lib-dao</artifactId>
+			<version>v1</version>
+		</dependency>
+	</dependencies>
 </project>

@@ -6,5 +6,16 @@
 		<version>v1</version>
 	</parent>
   <artifactId>admin-service</artifactId>
-
+<dependencies>
+	<dependency>
+		<groupId>au.company.demo</groupId>
+		<artifactId>admin-dao</artifactId>
+		<version>v1</version>
+	</dependency>
+	<dependency>
+		<groupId>au.company.demo</groupId>
+		<artifactId>_lib-service</artifactId>
+		<version>v1</version>
+	</dependency>
+</dependencies>
 </project>

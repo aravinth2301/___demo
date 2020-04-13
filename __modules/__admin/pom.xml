@@ -16,5 +16,6 @@
         <module>admin-dao</module>
         <module>admin-service</module>
         <module>admin-controller</module>
+        <module>admin-aws-lambda</module>
     </modules>
 </project>

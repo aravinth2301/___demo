@@ -13,6 +13,7 @@
         <module>_lib-common</module>
         <module>_lib-dao</module>
         <module>_lib-service</module>
+        <module>_jwt-authorization-server</module>
     </modules>
 
     <parent>

@@ -21,7 +21,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>sample-run</finalName>
+        <finalName>vue</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -10,7 +10,7 @@ const routes = [
   },
   {
     path: pgPrefix + "/dashboard",
-    alias: ["/"],
+    alias: [pgPrefix + "/"],
     component: () =>
       import(/* webpackChunkName: "dashboard" */ "../Dashboard.vue")
   },

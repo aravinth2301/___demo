@@ -1,9 +1,9 @@
 version: '3'
 services:
   vue-service:
-    image: aradocker/demo-vue
+    image: aradocker/demo-spring-vue
     ports:
-    - 8080:5000
+    - 8080:8080
     networks:
       - web
 #    build:

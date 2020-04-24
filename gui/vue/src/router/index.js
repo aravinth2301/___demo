@@ -2,20 +2,20 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
-
+let pgPrefix = "/vapp";
 const routes = [
   {
-    path: "/login",
+    path: pgPrefix + "/login",
     component: () => import(/* webpackChunkName: "login" */ "../Login.vue")
   },
   {
-    path: "/dashboard",
+    path: pgPrefix + "/dashboard",
     alias: ["/"],
     component: () =>
       import(/* webpackChunkName: "dashboard" */ "../Dashboard.vue")
   },
   {
-    path: "/data",
+    path: pgPrefix + "/data",
     component: () =>
       import(/* webpackChunkName: "search data" */ "../views/SearchData.vue")
   }

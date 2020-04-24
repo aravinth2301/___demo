@@ -2,11 +2,22 @@ version: '3'
 services:
   vue-service:
     image: aradocker/demo-vue
+    ports:
+    - 8080:5000
+    networks:
+      - web
 #    build:
 #      context: gui/vue
 #      dockerfile: Dockerfile
   sample-rest:
-    image: aradocker
+    image: aradocker/demo-sample-rest
+    ports:
+    - 8000:8000
+    networks:
+      - web
 #    build:
 #      context: __modules/__sample
 #      dockerfile: Dockerfile
+
+networks:
+  web:

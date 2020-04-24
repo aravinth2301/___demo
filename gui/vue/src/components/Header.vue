@@ -22,7 +22,7 @@
     <!-- Right side -->
     <div class="level-right">
       <p class="level-item">
-        <a class="button is-info" href="/dashboard">Back</a>
+        <a class="button is-info" href="/vapp/dashboard">Back</a>
       </p>
     </div>
   </nav>

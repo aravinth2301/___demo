@@ -1,0 +1,12 @@
+version: '3'
+services:
+  vue-service:
+    image: aradocker/demo-vue
+#    build:
+#      context: gui/vue
+#      dockerfile: Dockerfile
+  sample-rest:
+    image: aradocker
+#    build:
+#      context: __modules/__sample
+#      dockerfile: Dockerfile

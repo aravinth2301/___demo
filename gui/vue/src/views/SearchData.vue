@@ -43,52 +43,29 @@
 </template>
 <script>
 import Header from "../components/Header";
+import { servApi } from "../api.js";
 export default {
   components: {
     Header
   },
-  data() {
-    const data = [
-      {
-        id: 1,
-        first_name: "Jesse",
-        last_name: "Simmons",
-        date: "2016-10-15 13:43:27",
-        gender: "Male"
-      },
-      {
-        id: 2,
-        first_name: "John",
-        last_name: "Jacobs",
-        date: "2016-12-15 06:00:53",
-        gender: "Male"
-      },
-      {
-        id: 3,
-        first_name: "Tina",
-        last_name: "Gilbert",
-        date: "2016-04-26 06:26:28",
-        gender: "Female"
-      },
-      {
-        id: 4,
-        first_name: "Clarence",
-        last_name: "Flores",
-        date: "2016-04-10 10:28:46",
-        gender: "Male"
-      },
-      {
-        id: 5,
-        first_name: "Anne",
-        last_name: "Lee",
-        date: "2016-12-06 14:38:38",
-        gender: "Female"
-      }
-    ];
+  mounted() {
+    servApi
+      .get("/v1/users")
+      .then(response => (this.data = response.data))
+      .catch(function(error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function() {
+        // always executed
+      });
+    console.log(this.data);
+  },
 
+  data() {
     return {
-      data,
-      selected: data[1],
+      data: [],
+      selected: null,
       columns: [
         {
           field: "id",
@@ -97,21 +74,28 @@ export default {
           numeric: true
         },
         {
-          field: "first_name",
+          field: "username",
           label: "First Name"
         },
         {
-          field: "last_name",
-          label: "Last Name"
-        },
-        {
-          field: "date",
-          label: "Date",
+          field: "enabled",
+          label: "Enabled",
           centered: true
         },
         {
-          field: "gender",
-          label: "Gender"
+          field: "accountNonExpired",
+          label: "Account Non-Expired",
+          centered: true
+        },
+        {
+          field: "accountNonLocked",
+          label: "Account Non-Locked",
+          centered: true
+        },
+        {
+          field: "credentialsNonExpired",
+          label: "Credentials Non-Expired",
+          centered: true
         }
       ]
     };

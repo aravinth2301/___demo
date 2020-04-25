@@ -22,10 +22,12 @@
           </a>
         </div>
         <div class="column">
-          <DashboardCard
-            icon-img="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png"
-            src-img="https://nnimgt-a.akamaihd.net/transform/v1/crop/frm/qPp7hNdixHQMTmePtAfTbh/212ce9ce-39e3-459f-8d7e-bd50458d213d.jpg/r151_0_648_280_w1200_h678_fmax.jpg"
-          />
+          <a href="/react/index.html">
+            <DashboardCard
+              icon-img="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png"
+              src-img="https://nnimgt-a.akamaihd.net/transform/v1/crop/frm/qPp7hNdixHQMTmePtAfTbh/212ce9ce-39e3-459f-8d7e-bd50458d213d.jpg/r151_0_648_280_w1200_h678_fmax.jpg"
+            />
+          </a>
         </div>
       </div>
     </div>

@@ -14,10 +14,12 @@
           </a>
         </div>
         <div class="column">
-          <DashboardCard
-            icon-img="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/21_Angular_logo_logos-512.png"
-            src-img="https://a-static.besthdwallpaper.com/new-zealand-natural-landscape-wallpaper-1280x960-2934_20.jpg"
-          />
+          <a href="/ng/index.html">
+            <DashboardCard
+              icon-img="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/21_Angular_logo_logos-512.png"
+              src-img="https://a-static.besthdwallpaper.com/new-zealand-natural-landscape-wallpaper-1280x960-2934_20.jpg"
+            />
+          </a>
         </div>
         <div class="column">
           <DashboardCard

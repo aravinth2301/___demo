@@ -1,6 +1,6 @@
-spring:
-  thymeleaf:
-    mode: HTML5
-    encoding: UTF-8
-    servlet:
-      content-type: text/html
+zuul:
+  routes:
+    client-api:
+      path: /api/**
+      sensitiveHeaders:
+      url: http://localhost:8000

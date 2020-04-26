@@ -1,0 +1,1 @@
+kompose up --server http://127.0.0.1:58842

@@ -1,0 +1,6 @@
+zuul:
+  routes:
+    client-api:
+      path: /api/**
+      sensitiveHeaders:
+      url: http://sample-rest:8000

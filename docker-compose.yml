@@ -7,7 +7,7 @@ services:
     networks:
       - web
 #    build:
-#      context: gui/vue
+#      context: __modules/__vue
 #      dockerfile: Dockerfile
   sample-rest:
     image: aradocker/demo-sample-rest

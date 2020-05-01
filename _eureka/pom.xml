@@ -3,33 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>__sample</artifactId>
+        <artifactId>___demo</artifactId>
         <groupId>au.company.demo</groupId>
         <version>v1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sample</artifactId>
+    <artifactId>_eureka</artifactId>
+
+
     <dependencies>
         <dependency>
-            <groupId>au.company.demo</groupId>
-            <artifactId>admin-service</artifactId>
-            <version>v1</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-log4j2</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
-
     <build>
-        <finalName>sample-run</finalName>
+        <finalName>eureka</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

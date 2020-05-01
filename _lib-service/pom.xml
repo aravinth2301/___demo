@@ -30,5 +30,11 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-commons -->
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-commons</artifactId>
+    </dependency>
+
 </dependencies>
 </project>

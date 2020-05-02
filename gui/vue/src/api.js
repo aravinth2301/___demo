@@ -9,7 +9,7 @@ export const vappApi = axios.create({
 
 export const servApi = axios.create({
   // baseURL: "http://localhost:9000/service-node/api",
-  baseURL: "https://localhost:8443/api",
+  baseURL: "/api",
   headers: {
     "Content-type": "application/json",
     Authorization: "Basic YWRtaW46YWRtaW4="

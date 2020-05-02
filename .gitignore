@@ -4,6 +4,8 @@
 **/.classpath
 **/.project
 **/.DS_Store
+**/.factorypath
+**/.settings
 /__modules/__vue/vue/src/main/resources/static/vue
 /__modules/__vue/vue/src/main/resources/static/ng
 /__modules/__vue/vue/src/main/resources/static/react

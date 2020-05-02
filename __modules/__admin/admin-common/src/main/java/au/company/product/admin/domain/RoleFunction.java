@@ -1,8 +1,12 @@
 package au.company.product.admin.domain;
 
-import java.io.Serializable;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -17,16 +21,16 @@ import au.company.product.lib.common.util.ApplicationConfig;
 @Table(name = "admin_role_function")
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(Include.NON_NULL)
-public class RoleFunction extends Domain implements Serializable {
+public class RoleFunction extends Domain {
 
     /**
-	 * 
-	 */
-	private static final long serialVersionUID = 788039073554282142L;
+     * 
+     */
+    private static final long serialVersionUID = 788039073554282142L;
 
-	@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "admin_role_function_generator")
-    @SequenceGenerator(name="admin_role_function_generator", sequenceName = "admin_role_function_seq",allocationSize = ApplicationConfig.DOMAIN_ID_INCREMENT_BY)
+    @SequenceGenerator(name = "admin_role_function_generator", sequenceName = "admin_role_function_seq", allocationSize = ApplicationConfig.DOMAIN_ID_INCREMENT_BY)
     private Long id;
 
     @ManyToOne
@@ -34,7 +38,6 @@ public class RoleFunction extends Domain implements Serializable {
 
     @ManyToOne
     private Function function;
-
 
     public RoleFunction() {
     }

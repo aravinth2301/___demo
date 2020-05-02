@@ -1,0 +1,15 @@
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:sample.p12
+    key-store-password: keystore
+    keyStoreType: PKCS12
+
+  # Spring Security
+#security:
+#  require-ssl: true
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

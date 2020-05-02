@@ -1,6 +1,5 @@
 package au.company.product.lib.common.domain.admin;
 
-import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
@@ -14,28 +13,28 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import org.springframework.security.core.userdetails.UserDetails;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import org.springframework.security.core.userdetails.UserDetails;
 
 import au.company.product.lib.common.domain.Domain;
 import au.company.product.lib.common.util.ApplicationConfig;
 
 @Entity
 @Table(name = "admin_app_user")
-public class AppUser extends Domain  implements Serializable, UserDetails {
+public class AppUser extends Domain implements UserDetails {
 
     /**
-	 * 
-	 */
-	private static final long serialVersionUID = -4552951401620495899L;
+     * 
+     */
+    private static final long serialVersionUID = -4552951401620495899L;
 
-	@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "admin_user_generator")
-    @SequenceGenerator(name="admin_user_generator", sequenceName = "admin_user_seq",allocationSize = ApplicationConfig.DOMAIN_ID_INCREMENT_BY)
+    @SequenceGenerator(name = "admin_user_generator", sequenceName = "admin_user_seq", allocationSize = ApplicationConfig.DOMAIN_ID_INCREMENT_BY)
     private Long id;
 
-    @Column(unique = true,nullable = false)
+    @Column(unique = true, nullable = false)
     private String username;
 
     @Column(nullable = false)
@@ -49,7 +48,7 @@ public class AppUser extends Domain  implements Serializable, UserDetails {
     @Transient
     private String newPassword;
 
-	@Override
+    @Override
     @JsonIgnoreProperties
     public Collection<? extends Role> getAuthorities() {
         return authorities;
@@ -116,5 +115,5 @@ public class AppUser extends Domain  implements Serializable, UserDetails {
     public String getNewPassword() {
         return newPassword;
     }
-     
+
 }

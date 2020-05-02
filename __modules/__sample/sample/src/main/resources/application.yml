@@ -1,5 +1,5 @@
 server:
-  port: 8443
+  port: 8444
   ssl:
     key-store: classpath:sample.p12
     key-store-password: keystore

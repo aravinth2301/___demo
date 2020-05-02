@@ -4,3 +4,6 @@ server:
     key-store: classpath:vue.p12
     key-store-password: keystore
     keyStoreType: PKCS12
+
+services:
+  port: 8444

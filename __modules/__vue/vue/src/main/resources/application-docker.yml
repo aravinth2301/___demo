@@ -3,4 +3,4 @@ zuul:
     client-api:
       path: /api/**
       sensitiveHeaders:
-      url: http://sample-rest:8000
+      url: https://sample-rest:8444

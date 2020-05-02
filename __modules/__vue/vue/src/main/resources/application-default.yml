@@ -3,4 +3,4 @@ zuul:
     client-api:
       path: /api/**
       sensitiveHeaders:
-      url: http://localhost:8000
+      url: https://localhost:8444/
